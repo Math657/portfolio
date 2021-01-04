@@ -1,38 +1,96 @@
-.App {
-  text-align: center;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    font-family: 'Roboto', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+    color: #333;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Header */
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: baseline;
+    padding: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.header h2 {
+    margin-right: auto;
+    font-size: 26px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style-type: none;
+    padding: 10px;
+}
+
+.nav>li {
+    padding: 10px;
+}
+
+.nav>li:hover {
+    cursor: pointer;
+    opacity: 90%;
+}
+
+/* Intro */
+
+.intro {
+    padding: 20px;
+    margin-top: 10em;
+    margin-bottom: 20em;
+    margin-left: 5em;
+    font-size: 28px;
+}
+
+.intro h1, .intro h3 {
+    margin-bottom: 10px;
+}
+
+/* SKill */
+
+.skill {
+    padding: 20px;
+    font-size: 22px;
+}
+
+.skill-item ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 2em;
+    border-bottom: 2px solid rgb(76, 128, 240);
+}
+
+.skill-item li {
+    font-size: 18px;
+    padding: 15px 35px 15px 15px;
+    line-height: 150%;
+    text-align: center;
+}
+
+.skill-item ul:hover {
+    cursor: pointer;
+}
+
+.skill-item li:hover {
+    background-color: #c0c0c0cb;
+    border-radius: 15px;
+}
+
+.skill-item li:active {
+    background-color: #c0c0c0cb;
+    border-radius: 15px;
 }
