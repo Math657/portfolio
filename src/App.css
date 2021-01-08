@@ -6,6 +6,8 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    max-width: 950px;
+    margin: auto;
 }
 
 a {
@@ -49,13 +51,20 @@ a {
 .intro {
     padding: 20px;
     margin-top: 10em;
-    margin-bottom: 20em;
-    margin-left: 5em;
+    margin-bottom: 18em;
+    margin-left: 15vw;
     font-size: 28px;
+    font-weight: 800;
 }
 
 .intro h1, .intro h3 {
     margin-bottom: 10px;
+}
+
+.intro h5 {
+    font-size: 16px;
+    margin-top: 1em;
+    font-weight: 100;
 }
 
 /* SKill */
@@ -71,26 +80,31 @@ a {
     justify-content: center;
     list-style-type: none;
     margin-top: 2em;
-    border-bottom: 2px solid rgb(76, 128, 240);
+    
 }
 
 .skill-item li {
     font-size: 18px;
-    padding: 15px 35px 15px 15px;
+    padding: 25px;
     line-height: 150%;
     text-align: center;
+    
 }
 
-.skill-item ul:hover {
+
+.skill-item li:hover {
+    background-color: #dad8d8cb;
+    border-radius: 15px 15px 0 0;
     cursor: pointer;
 }
 
-.skill-item li:hover {
-    background-color: #c0c0c0cb;
-    border-radius: 15px;
-}
+/* Skill Details */
 
-.skill-item li:active {
-    background-color: #c0c0c0cb;
-    border-radius: 15px;
+.skill-details {
+    text-align: center;
+    max-width: 665px;
+    margin: auto;
+    padding-top: 1em;
+    font-size: 18px;
+    border-top: 2px solid rgb(76, 128, 240);
 }
