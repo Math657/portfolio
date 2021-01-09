@@ -4,7 +4,7 @@ import SkillItem from './SkillItem'
 export class Skill extends Component {
     render() {
         return (
-            <div class="skill">
+            <div className="skill section">
                 <h2>Spécialités</h2>
                 <SkillItem />
             </div>

@@ -14,17 +14,33 @@ a {
     color: #333;
 }
 
+.section {
+    padding: 20px;
+    font-size: 22px;
+    margin-bottom: 4em;
+}
+
+.section h2 {
+    margin-bottom: 1em;
+}
+
 /* Header */
 
-.header {
+header {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: baseline;
     padding: 20px;
+    background-color: white;
+    width: 100%;
+    max-width: 950px;
+    position: fixed;
+    top: 0;
+    
 }
 
-.header h2 {
+header h2 {
     margin-right: auto;
     font-size: 26px;
 }
@@ -35,6 +51,17 @@ a {
     justify-content: flex-end;
     list-style-type: none;
     padding: 10px;
+}
+
+.active {
+    visibility: visible;
+    transition: all 0.5s;
+}
+
+.hidden {
+    visibility: hidden;
+    transition: all 0.5s;
+    transform: translateY(-100%);
 }
 
 .nav>li {
@@ -50,11 +77,10 @@ a {
 
 .intro {
     padding: 20px;
-    margin-top: 10em;
-    margin-bottom: 18em;
+    margin-top: 32vh;
+    margin-bottom: 50vh;
     margin-left: 15vw;
-    font-size: 28px;
-    font-weight: 800;
+    font-size: 30px;
 }
 
 .intro h1, .intro h3 {
@@ -62,49 +88,105 @@ a {
 }
 
 .intro h5 {
-    font-size: 16px;
+    font-size: 18px;
     margin-top: 1em;
     font-weight: 100;
 }
 
-/* SKill */
-
-.skill {
-    padding: 20px;
-    font-size: 22px;
+.intro h4 {
+    font-size: 20px;
 }
+
+/* SKill */
 
 .skill-item ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
     list-style-type: none;
-    margin-top: 2em;
-    
 }
 
 .skill-item li {
-    font-size: 18px;
-    padding: 25px;
+    font-size: 16px;
+    padding: 15px 35px 15px 35px;
     line-height: 150%;
-    text-align: center;
-    
+    text-align: center;   
 }
 
 
 .skill-item li:hover {
-    background-color: #dad8d8cb;
+    background-color: #ecebebcb;
     border-radius: 15px 15px 0 0;
+    transition:  0.2s;
     cursor: pointer;
 }
 
 /* Skill Details */
 
 .skill-details {
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
     text-align: center;
-    max-width: 665px;
+    /* max-width: 705px;  */
+    max-width: 660px;
     margin: auto;
     padding-top: 1em;
-    font-size: 18px;
+    font-size: 16px;
     border-top: 2px solid rgb(76, 128, 240);
+}
+
+
+
+.one-skill {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    padding: 1em; 
+    -webkit-animation: scale 0.5s ease-in-out;
+    animation: scale 0.3s ease-in-out;
+}
+
+@keyframes scale {
+    0% {
+        -webkit-transform: scale(1.0);
+        transform: scale(1.0);
+    }
+    50% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.1);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+.devicon-git-plain {
+    max-width: 2em;
+    margin-bottom: 1em;  
+}
+
+/* Projects */
+
+.one-project {
+    display: flex;
+    flex-direction: row;
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-info h3 {
+    color: rgb(76, 128, 240);
+}
+
+
+/* Contact */
+
+.contact {
+    text-align: center;
 }
