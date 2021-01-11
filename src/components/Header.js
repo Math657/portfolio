@@ -35,7 +35,7 @@ export class Header extends Component {
     render() {
         return (
             <header className={this.state.show ? "active" : "hidden"} style={this.getStyle()}>
-                <h2>MD</h2>
+                <h2 onClick={this.scrollTop()}>MD</h2>
                 <ul className="nav">
                     <li>À propos</li>
                     <li>Projets</li>

@@ -5,7 +5,8 @@ export class Contact extends Component {
         return (
             <div className="contact section">
                 <h2>Me contacter</h2>
-                <div>Linkdn, Github, Mail</div>
+                
+                <div>LinkdIn, Github, Mail</div>
             </div>
         )
     }
