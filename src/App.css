@@ -37,9 +37,15 @@ header {
     
 }
 
-header h2 {
+header h2, .logo {
+    color: #000000;
     margin-right: auto;
     font-size: 26px;
+    text-decoration: none;
+}
+
+header h2:hover, .logo {
+    cursor: pointer;
 }
 
 .nav {
@@ -61,11 +67,13 @@ header h2 {
     transform: translateY(-100%);
 }
 
-.nav>li {
-    padding: 10px;
+.nav>li, .nav-link {
+    color: #000000;
+    padding: 10px; 
+    text-decoration: none;
 }
 
-.nav>li:hover {
+.nav>li:hover, .nav-link:hover {
     cursor: pointer;
     opacity: 90%;
     color: rgb(76, 128, 240);
@@ -75,8 +83,8 @@ header h2 {
 
 .intro {
     padding: 20px;
-    margin-top: 32vh;
-    margin-bottom: 50vh;
+    margin-top: 40vh;
+    margin-bottom: 40vh;
     margin-left: 15vw;
     font-size: 30px;
 }
@@ -241,14 +249,14 @@ header h2 {
     background-color: #1B1B1B;
     color: white;
     border-radius: 10px;
-    padding: 1.3em;
+    padding: 1.3em 1.3em 1.3em 4em;
+    margin-bottom: 1em;
+    margin-right: auto;
     line-height: 150%;
     min-height: 60px;
     box-shadow: 3px 3px 10px -3px #000;
-    margin-bottom: 1em;
     transition: ease-in-out 0.2s;
     transform: translateX(10px);
-    /* max-width: 500px;   */
     z-index: 2;
 }
 
@@ -263,24 +271,65 @@ header h2 {
     margin-bottom: 1em;
 }
 
-.project-links {
-    width: 1.3em;
-}
-
-.devicon-git-plain-project {
-    max-width: 1.3em;
+.project-icons {
+    font-size: 26px;
     transition: 0.3s;
+    color: #000000;
+    margin-left: 10px;
 }
 
-.devicon-git-plain-project:hover {
+.project-icons:hover {
     filter: invert(46%) sepia(69%) saturate(2512%) hue-rotate(204deg) brightness(96%) contrast(95%);
     transition: 0.3s;
 }
-
-
 
 /* Contact */
 
 .contact {
     text-align: center;
+}
+
+.contact h5 {
+    font-weight: 100;
+    font-size: 22px;
+    margin-bottom: 1em;
+}
+
+.contact button {
+    border: none;
+    background-color: #ecebebcb;
+    border-radius: 5px;
+    padding: 10px 25px 10px 25px;
+    margin: 0 5px 2em 5px;
+}
+
+.contact button:hover {
+    cursor: pointer;
+}
+
+.contact-icons {
+    color: #000000;
+    font-size: 2em;
+}
+
+/* Footer */
+
+.footer {
+    text-align: center;
+    margin: 1em;
+}
+
+/* Home */
+
+
+/* About */
+
+.about {
+    margin-top: 10em;
+    text-align: center;
+}
+
+.about img {
+    width: 170px;
+    border-radius: 5px;
 }

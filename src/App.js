@@ -1,44 +1,31 @@
+import './App.css'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 import Header from './components/Header'
-import Intro from './components/sections/Intro'
-import Skill from './components/sections/skill/Skill'
-import Project from './components/sections/project/Project'
-import Contact from './components/sections/Contact'
+import Home from './pages/Home'
+import About from './pages/About'
+import Footer from './components/Footer'
 import Stars from './components/Stars'
-import ScrollAnimation from 'react-animate-on-scroll'
 import "animate.css/animate.min.css";
 
-import './App.css'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
+import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons'
+
+library.add(fab, faEnvelope, faExternalLinkAlt)
+
 
 
 function App() {
   return (
     <div className="App">
-      <Stars />
-      <Header />
-      
-      <ScrollAnimation animateIn="animate__animated animate__fadeIn" 
-                       duration="0.8"
-                       offset="550">
-        <Intro />
-      </ScrollAnimation>
-
-      <ScrollAnimation animateIn="animate__animated animate__fadeIn" 
-                       duration="0.8"
-                       offset="450">
-        <Skill />
-      </ScrollAnimation>
-
-      <ScrollAnimation animateIn="animate__animated animate__fadeIn" 
-                        duration="0.8"
-                        offset="450">
-        <Project />
-      </ScrollAnimation>
-
-      <ScrollAnimation animateIn="animate__animated animate__fadeIn" 
-                       duration="0.8"
-                       offset="200">
-        <Contact />
-      </ScrollAnimation> 
+        <Router>
+            <Stars />
+            <Header />
+            <Route exact path="/" component={Home} />
+            <Route path="/about" component={About} />
+            <Footer />
+        </Router>
     </div>
   )
 }
