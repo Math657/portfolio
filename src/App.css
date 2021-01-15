@@ -119,6 +119,11 @@ header h2:hover, .logo {
     text-align: center;   
 }
 
+.selected-skill {
+    background-color: #ecebebcb;
+    border-radius: 15px 15px 0 0;
+}
+
 
 .skill-item li:hover {
     background-color: #ecebebcb;
@@ -325,11 +330,165 @@ header h2:hover, .logo {
 /* About */
 
 .about {
+    
+}
+
+.about-me {
     margin-top: 10em;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
     text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.about-me p {
+    max-width: 500px;
+    font-size: 20px;
+    text-align: left;
+    line-height: 150%;
+}
+
+.about-me img {
+    margin-left: 2em;
 }
 
 .about img {
     width: 170px;
     border-radius: 5px;
 }
+
+
+
+
+@media only screen and (max-width: 700px) {
+
+    .section {
+        margin-bottom: 2em;
+    }
+
+    /* Header */
+    .nav {
+        padding: 5px;
+    }
+
+    .nav>li, .nav-link {
+        padding: 5px; 
+    }
+
+    /* Intro */
+    .intro {
+        margin-top: 30vh;
+        margin-bottom: 30vh;
+        padding-left: 0;
+    }
+
+    /* Skill */
+    .skill-item {
+        border-right: 2px solid rgb(76, 128, 240);
+        /* margin-top: auto;
+        margin-bottom: auto; */
+    }
+
+
+    .skill-item ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        list-style-type: none;
+    }
+
+    .skill-container {
+        display: flex;
+        flex-direction: row;
+    }
+ 
+    .skill-item li {
+        font-size: 16px;
+        padding: 15px 35px 15px 35px;
+        line-height: 150%;
+        border-radius: 0;
+        text-align: center;   
+    }
+    
+    
+    .skill-item li:hover {
+        background-color: #ecebebcb;
+        border-radius: 0;
+        transition:  0.2s;
+        cursor: pointer;
+    }
+
+    .skill-details {
+        border-top: none;
+        flex-wrap: wrap;
+    }
+
+    /* Project */
+    .one-project {
+        display: flex;
+        flex-direction: column-reverse;
+        position: static;
+        margin: 0;
+        transform: none;
+    }
+
+    .one-project:hover .project-description {
+        transform: none;
+    }
+
+    .project-thumb {
+        overflow: visible;
+    }
+
+    .fishfollow-img img {
+        width: 300px;
+        height:auto;
+        border: 1px #dadadacb solid;
+        border-radius: 3px;
+    }
+
+    .overlay {
+        background-color: #ffffff;
+        transition: 0.2s;
+        height: 100%;
+        width: 100%;
+        position: static;
+    }
+
+    .project-info {
+        position: static;
+        text-align: center;
+        align-items: center;
+    }
+
+    .project-title {
+        text-align: center;
+        margin-right: auto;
+    }
+
+    .project-description {
+        padding: 1em;
+        font-size: 16px;
+        transform: none;
+    }
+
+    .project-description {
+        transform: none;
+    }
+
+    .project-links {
+        margin-bottom: 1em;
+    }
+
+}
+
+
+/* @media only screen and (max-width: 900px) {
+    .project-thumb {
+        display: none;
+        background-color: red;
+    }
+} */

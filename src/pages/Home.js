@@ -10,26 +10,26 @@ export class Home extends Component {
         return (
             <div className="home">
                 <ScrollAnimation animateIn="animate__animated animate__fadeIn" 
-                                duration="0.7"
-                                offset="550">
+                                duration={0.7}
+                                offset={10}>
                     <Intro id="intro"/>
                 </ScrollAnimation>
 
                 <ScrollAnimation animateIn="animate__animated animate__fadeIn" 
-                                duration="0.7"
-                                offset="450">
+                                duration={0.7}
+                                offset={10}>
                     <Skill id="skill"/>
                 </ScrollAnimation>
 
                 <ScrollAnimation animateIn="animate__animated animate__fadeIn" 
-                                duration="0.7"
-                                offset="250">
+                                duration={0.7}
+                                offset={10}>
                     <Project id="project"/>
                 </ScrollAnimation>
 
                 <ScrollAnimation animateIn="animate__animated animate__fadeIn" 
-                                duration="0.7"
-                                offset="200">
+                                duration={0.7}
+                                offset={10}>
                     <Contact id="contact"/>
                 </ScrollAnimation>
             </div>
