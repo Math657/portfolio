@@ -5,7 +5,7 @@ let LinkScroll = Scroll.Link
 export class Header extends Component {
 
     getStyle() {
-        if (this.props.scrollPos >= 100 || this.props.scrollPos === 0) {
+        if (this.props.scrollPos >= 150 || this.props.scrollPos === 0) {
             return {
                 backgroundColor: 'transparent'
             }

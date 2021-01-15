@@ -25,9 +25,10 @@ export class MainWrapper extends Component {
 
     handleScroll = () => {
         this.setState({
-            scrollPos: document.body.getBoundingClientRect().top,
+            scrollPos: document.body.getBoundingClientRect().top, // + 150 ?
             showHeader: document.body.getBoundingClientRect().top > this.state.scrollPos
         })
+        // showheader at 150
     }
 
     showHeader = () => {

@@ -4,6 +4,12 @@ import photo from '../images/photo.jpg'
 export class About extends Component {
     componentDidMount() {
         this.props.showHeader()
+        setTimeout(() => {
+            this.props.showHeader()
+        }, 10)
+        setTimeout(() => {
+            this.props.showHeader()
+        }, 600)
     }
 
     render() {
