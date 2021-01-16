@@ -1,0 +1,64 @@
+image: docker:git
+services:
+  - docker:dind
+
+stages:
+  - build
+  - release
+  - deploy
+
+variables:
+  CONTAINER_TEST_IMAGE: registry.gitlab.com/rexar/portfolio:$CI_BUILD_REF_NAME
+  CONTAINER_RELEASE_IMAGE: registry.gitlab.com/rexar/portfolio:latest
+
+before_script:
+  - echo "$CI_REGISTRY_PASSWORD" | docker login -u "$CI_REGISTRY_USER" "$CI_REGISTRY" --password-stdin
+
+build:
+  stage: build
+  script:
+    - docker build -t $CONTAINER_TEST_IMAGE .
+    - docker push $CONTAINER_TEST_IMAGE
+
+release-image:
+  stage: release
+  script:
+    - docker pull $CONTAINER_TEST_IMAGE
+    - docker tag $CONTAINER_TEST_IMAGE $CONTAINER_RELEASE_IMAGE
+    - docker push $CONTAINER_RELEASE_IMAGE
+  only:
+    - master
+
+deploy:
+  stage: deploy
+  before_script:
+    - which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )
+    - eval $(ssh-agent -s)
+    - echo "$CI_SSHKEY" | tr -d '\r' | ssh-add - > /dev/null
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    - echo "$CI_KNOWN_HOSTS" > ~/.ssh/known_hosts
+    - chmod 644 ~/.ssh/known_hosts
+    
+  script:
+    - ssh -tt root@37.187.127.217 << EOF
+
+      echo '$CI_REGISTRY_PASSWORD' | docker login -u '$CI_REGISTRY_USER' '$CI_REGISTRY' --password-stdin
+
+      docker pull registry.gitlab.com/rexar/portfolio:latest
+
+      docker stop portfolio
+
+      docker rm portfolio
+
+      docker rmi registry.gitlab.com/rexar/portfolio:current
+
+      docker tag registry.gitlab.com/rexar/portfolio:latest registry.gitlab.com/rexar/portfolio:current
+
+      docker run -d -p 29270:3000 -l traefik.enable=true -l traefik.backend=portfolio -l traefik.frontend.rule=Host:mathieudessaint.com,www.joffreydavaic.com -l traefik.docker.network=proxy -l traefik.port=3000 --network proxy --restart unless-stopped --name portfolio registry.gitlab.com/rexar/portfolio:latest
+
+      exit
+
+      EOF
+  only:
+    - master

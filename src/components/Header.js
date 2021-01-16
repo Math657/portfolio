@@ -1,40 +1,48 @@
 import React, { Component } from 'react'
-import { Link} from 'react-router-dom'
 import * as Scroll from 'react-scroll'
 let LinkScroll = Scroll.Link
 export class Header extends Component {
 
     getStyle() {
-        if (this.props.scrollPos >= 150 || this.props.scrollPos === 0) {
+        if (this.props.scrollPos >= 200) {
             return {
                 backgroundColor: 'transparent'
             }
         }
     }
 
+    
+
     render() {
-        return (
+        const scrollTop = () => {
+            window[`scrollTo`]({ top: 0, behavior: `smooth` })
+        }
+
+        return (        
             <header className={this.props.showHeader ? "active" : "hidden"} style={this.getStyle()}>
-                <h2><Link className ="logo" to ="/">MD</Link></h2>
+                <h2 onClick={scrollTop}>MD</h2>
                 <ul className="nav">
 
                     <li><LinkScroll activeClass="active" 
                     to="skill" spy={true} smooth={true}>
-                        <Link to ="/" className="nav-link">Compétences</Link>
+                        Compétences
                     </LinkScroll></li>
 
                     <li><LinkScroll activeClass="active" 
                     to="project" spy={true} smooth={true}>
-                        <Link to ="/" className="nav-link">Projets</Link>  
+                        Projets
                     </LinkScroll></li>
 
+                    <li><LinkScroll activeClass="active"
+                     to="about" spy={true} smooth={true}>
+                        À propos
+                    </LinkScroll></li>
 
                     <li><LinkScroll activeClass="active"
                      to="contact" spy={true} smooth={true}>
-                        <Link to ="/" className="nav-link">Contact</Link>
+                        Contact
                     </LinkScroll></li>
                     
-                    <li><Link to ="/about" className="nav-link">À propos</Link></li>
                 </ul>
             </header>
         )

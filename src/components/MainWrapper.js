@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
 import Header from './Header'
 import Home from '../pages/Home'
 import About from '../pages/About'
@@ -25,10 +24,10 @@ export class MainWrapper extends Component {
 
     handleScroll = () => {
         this.setState({
-            scrollPos: document.body.getBoundingClientRect().top, // + 150 ?
+            scrollPos: document.body.getBoundingClientRect().top,
             showHeader: document.body.getBoundingClientRect().top > this.state.scrollPos
+            || this.state.scrollPos >= 200
         })
-        // showheader at 150
     }
 
     showHeader = () => {
@@ -40,13 +39,11 @@ export class MainWrapper extends Component {
     render() {
         return (
             <div>
-                <Router>
                     <Stars />
                     <Header scrollPos={this.state.scrollPos} showHeader={this.state.showHeader} />
-                    <Route exact path="/" component={Home} />
-                    <Route path="/about" render={props => <About showHeader = {this.showHeader} />} />
+                    <Home />
+                    {/* <About showHeader = {this.showHeader} /> */}
                     <Footer />
-                </Router>
             </div>
         )
     }
