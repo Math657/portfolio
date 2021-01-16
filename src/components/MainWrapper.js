@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Header from './Header'
 import Home from '../pages/Home'
-import About from '../pages/About'
+// import About from '../pages/About'
 import Footer from './Footer'
 import Stars from './Stars'
 
