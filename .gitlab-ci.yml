@@ -55,7 +55,7 @@ deploy:
 
       docker tag registry.gitlab.com/rexar/portfolio:latest registry.gitlab.com/rexar/portfolio:current
 
-      docker run -d -p 29270:80 -l traefik.enable=true -l traefik.backend=portfolio -l traefik.frontend.rule=Host:mathieudessaint.com,www.mathieudessaint.com -l traefik.docker.network=proxy -l traefik.port=80 --network proxy --restart unless-stopped --name portfolio registry.gitlab.com/rexar/portfolio:latest
+      docker run -d -p 29270:3000 -l traefik.enable=true -l traefik.backend=portfolio -l traefik.frontend.rule=Host:mathieudessaint.com,www.mathieudessaint.com -l traefik.docker.network=proxy -l traefik.port=3000 --network proxy --restart unless-stopped --name portfolio registry.gitlab.com/rexar/portfolio:latest
 
       exit
 
