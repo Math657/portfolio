@@ -324,13 +324,9 @@ header h2:hover, .logo {
     margin: 1em;
 }
 
-/* Home */
-
-
 /* About */
 
 .about-me {
-    /* margin-top: 10em; */
     margin-left: 1.5em;
     margin-right: 1.5em;
     text-align: center;
@@ -343,21 +339,24 @@ header h2:hover, .logo {
 .about-me p {
     max-width: 500px;
     font-size: 20px;
-    text-align: left;
+    text-align: justify;
     line-height: 150%;
-}
-
-.about-me img {
-    margin-left: 2em;
-}
-
-.about img {
-    width: 170px;
-    border-radius: 5px;
+    margin-bottom: 1em;
 }
 
 
-
+.wrapper-picture {
+    border-radius: 50%;
+    -webkit-box-shadow: inset 0px 0px 8px 8px rgba(255,255,255,1);
+    -moz-box-shadow: inset 0px 0px 8px 8px rgba(255,255,255,1);
+    box-shadow: inset 0px 0px 8px 8px rgba(255,255,255,1);
+    margin-right: 2em;
+    min-height: 180px;
+    min-width: 150px;
+    background-image: url(./images/photo.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 
 @media only screen and (max-width: 700px) {
 
@@ -368,10 +367,13 @@ header h2:hover, .logo {
     /* Header */
     .nav {
         padding: 5px;
+        flex-wrap: wrap;
     }
 
     .nav>li, .nav-link {
         padding: 5px; 
+        margin: 5px;
+        
     }
 
     /* Intro */
@@ -384,8 +386,6 @@ header h2:hover, .logo {
     /* Skill */
     .skill-item {
         border-right: 2px solid rgb(76, 128, 240);
-        /* margin-top: auto;
-        margin-bottom: auto; */
     }
 
 
@@ -477,6 +477,29 @@ header h2:hover, .logo {
 
     .project-links {
         margin-bottom: 1em;
+    }
+
+    /* About */
+
+    .about {
+        padding: 0;
+    }
+
+    .about h2 {
+        padding: 20px;
+        margin: 0;
+    }
+    
+    .about-me {
+        flex-direction: column-reverse;
+    }
+
+    .about-me p {
+        font-size: 18px;
+    }
+
+    .wrapper-picture {
+        margin: 0;
     }
 
 }
