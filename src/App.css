@@ -364,26 +364,33 @@ header h2:hover, .logo {
         margin-bottom: 2em;
     }
 
-    /* Header */
+    /* Header Mobile */
+    header {
+        padding: 5px 15px 0px 0px;
+    }
+
     .nav {
         padding: 5px;
-        flex-wrap: wrap;
+        font-size: 14px;
     }
 
     .nav>li, .nav-link {
         padding: 5px; 
         margin: 5px;
-        
     }
 
-    /* Intro */
+    header h2 {
+        display: none;
+    }
+
+    /* Intro Mobile */
     .intro {
         margin-top: 30vh;
         margin-bottom: 30vh;
         padding-left: 0;
     }
 
-    /* Skill */
+    /* Skill Mobile */
     .skill-item {
         border-right: 2px solid rgb(76, 128, 240);
     }
@@ -422,7 +429,7 @@ header h2:hover, .logo {
         flex-wrap: wrap;
     }
 
-    /* Project */
+    /* Project Mobile */
     .one-project {
         display: flex;
         flex-direction: column-reverse;
@@ -479,7 +486,7 @@ header h2:hover, .logo {
         margin-bottom: 1em;
     }
 
-    /* About */
+    /* About Mobile */
 
     .about {
         padding: 0;
