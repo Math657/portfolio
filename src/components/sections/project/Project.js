@@ -33,7 +33,7 @@ export class Project extends Component {
                             Fish & Follow
                         </a> 
                         <div className="project-description">
-                            Application de pêche et de partage, déployé avec Docker <br></br>
+                            Application de pêche et de partage, déployé sur Docker <br></br>
                             Version bientôt accessible, toujours en développement
                         </div>
                         <p className="project-tools">Vuejs &nbsp; Node/Express &nbsp; MongoDB</p>

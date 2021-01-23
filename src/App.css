@@ -358,6 +358,8 @@ header h2:hover, .logo {
     background-repeat: no-repeat;
 }
 
+
+/* MOBILE */
 @media only screen and (max-width: 700px) {
 
     .section {
@@ -366,7 +368,7 @@ header h2:hover, .logo {
 
     /* Header Mobile */
     header {
-        padding: 5px 15px 0px 0px;
+        padding: 5px 15px 10px 10px;
     }
 
     .nav {
@@ -379,9 +381,7 @@ header h2:hover, .logo {
         margin: 5px;
     }
 
-    header h2 {
-        display: none;
-    }
+    
 
     /* Intro Mobile */
     .intro {
@@ -509,4 +509,67 @@ header h2:hover, .logo {
         margin: 0;
     }
 
+}
+
+/* Mobile Small */
+@media only screen and (max-width: 410px) {
+    header h2 {
+        font-size: 18px;
+    }
+
+    .nav {
+        font-size: 12px;
+    }
+}
+
+/* iPad Pro */
+@media only screen and (max-width: 1100px) and (min-height: 1200px) {
+    header {
+        font-size: 24px;
+    }
+
+    header h2 {
+        font-size: 36px;
+    }
+
+    .intro {
+        font-size: 250%;
+    }
+
+    .section {
+        font-size: 200%;
+    }
+
+    .skill-item li {
+        font-size: 26px;
+    }
+
+    .one-skill {
+        font-size: 26px
+    }
+
+    .project-description {
+        font-size: 18px;
+    }
+
+    .project-info p {
+        font-size: 24px;
+    }
+
+    .about-me p {
+        font-size: 90%;
+    }
+
+    .wrapper-picture {
+        min-height: 250px;
+        min-width: 210px;
+    }
+
+    .contact h5 {
+        font-size: 120%;
+    }
+
+    .contact button {
+        font-size: 24px;
+    }
 }
