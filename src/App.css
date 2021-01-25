@@ -96,7 +96,7 @@ header h2:hover, .logo {
 .intro h5 {
     font-size: 18px;
     margin-top: 1em;
-    font-weight: 100;
+    font-weight: 300;
 }
 
 .intro h4 {
@@ -326,22 +326,28 @@ header h2:hover, .logo {
 
 /* About */
 
+.about {
+    margin-bottom: 2em;
+}
+
 .about-me {
-    margin-left: 1.5em;
-    margin-right: 1.5em;
     text-align: center;
     align-items: center;
     display: flex;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column-reverse;
 }
 
 .about-me p {
-    max-width: 500px;
+    max-width: 800px;
     font-size: 20px;
     text-align: justify;
     line-height: 150%;
     margin-bottom: 1em;
+}
+
+.important-words {
+    color: rgb(76, 128, 240);
 }
 
 
@@ -350,7 +356,7 @@ header h2:hover, .logo {
     -webkit-box-shadow: inset 0px 0px 8px 8px rgba(255,255,255,1);
     -moz-box-shadow: inset 0px 0px 8px 8px rgba(255,255,255,1);
     box-shadow: inset 0px 0px 8px 8px rgba(255,255,255,1);
-    margin-right: 2em;
+    margin-top: 1em;
     min-height: 180px;
     min-width: 150px;
     background-image: url(./images/photo.jpg);
@@ -499,6 +505,8 @@ header h2:hover, .logo {
     
     .about-me {
         flex-direction: column-reverse;
+        margin-left: 1.5em;
+        margin-right: 1.5em;
     }
 
     .about-me p {
@@ -519,6 +527,11 @@ header h2:hover, .logo {
 
     .nav {
         font-size: 12px;
+    }
+
+    .about-me {
+        margin-left: 1.5em;
+        margin-right: 1.5em;
     }
 }
 
@@ -571,5 +584,9 @@ header h2:hover, .logo {
 
     .contact button {
         font-size: 24px;
+    }
+
+    .about-me {
+        margin-left: 1.5em;
     }
 }

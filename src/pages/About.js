@@ -9,13 +9,16 @@ export class About extends Component {
                 <div className="about-me">
                     <div className="wrapper-picture">
                     </div>
-                    <p>Passionné par le développement web, j'ai commencé par suivre une formation puis j'ai continuer d'approfondir mes compétences en autodidacte.
-                        Je me suis spécialisé en Javascript en utilisant principalement Vuejs et React côté frontend, et Nodejs/Express pour le backend.
-                        Je cherche toujours à m'améliorer et à apprendre de nouvelles choses.
-                        Résoudre des problèmes, être challengé au quotiden, mener un projet à bien, c'est captivant.
-                        Je développe actuellement une application (Fish & Follow) qui sera bientôt disponible sur le web.<br></br>
+                    <p>Si je devais qualifier en un mot mon parcours, je dirais : atypique.
+                        En effet, après une licence en management international bilingue anglais et une expérience professionnelle en tant que chargé d’affaires, je me suis rendu compte que j’avais absolument besoin d’être épanoui dans mon travail. 
+                        Me réorienter vers le développement web m’a donc paru évident étant donné que j’ai toujours été passionné par ce domaine.
+                        J'ai donc suivi une formation pour acquérir des connaissances solides. <br></br> <br></br> Autodidacte, je continue perpétuellement à élargir mes compétences, même si je me suis spécialisé en <span class="important-words">Javascript. </span>
+                        Les technologies  principales que j’utilise sont <span class="important-words">Vuejs et React côté frontend,</span> et <span class="important-words">Nodejs/Express en backend. </span>
+                        Ce que j’aime avant tout dans ce métier, c’est la  réalisation de projets et le challenge quotidien, ce qui est en adéquation avec ma personnalité. Persévérant et autonome, je n’abandonne jamais devant la difficulté. En effet, résoudre des problèmes ne me fait pas peur, bien au contraire !
+                        D’ailleurs, je développe actuellement une application de pêche (Fish & Follow) qui sera bientôt disponible sur le web.<br></br>
                         <br></br>
-                        Par ailleurs, je cherche à acquérir de l'expérience professionelle, n'hésitez donc pas à me contacter pour un CDI/CDD ou diverses missions.
+                        Ce que je recherche aujourd'hui, c’est acquérir davantage d’expérience professionnelle. 
+                        C’est pourquoi si vous avez diverses missions à me proposer ou un CDD / CDI, n'hésitez pas à me contacter, je me ferais un plaisir d’échanger avec vous.
                     </p>  
                 </div>       
             </div>
