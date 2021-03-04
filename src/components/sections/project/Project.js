@@ -35,7 +35,7 @@ export class Project extends Component {
                         </a> 
                         <div className="project-description">
                             Application de pêche et de partage, déployé sur Docker <br></br>
-                            Version bientôt accessible, toujours en développement
+                            Version accessible, toujours en développement
                         </div>
                         <p className="project-tools">Vue.js &nbsp; Node.js/Express &nbsp; MongoDB</p>
                         <div className="project-links">
@@ -43,8 +43,11 @@ export class Project extends Component {
                             target="_blank"
                             rel="noopener noreferrer">
                                 <FontAwesomeIcon icon={['fab', 'github']} className="project-icons" />
-                                <FontAwesomeIcon icon={['fas', 'external-link-alt']} className="project-icons" />
-                                
+                            </a>  
+                            <a href="https://fishnfollow.com/" 
+                            target="_blank"
+                            rel="noopener noreferrer">
+                                <FontAwesomeIcon icon={['fas', 'external-link-alt']} className="project-icons" /> 
                             </a>  
                         </div>
                     </div>  
@@ -76,7 +79,7 @@ export class Project extends Component {
                             Speedype
                         </a> 
                         <div className="project-description-left">
-                            Tapez le plus de mots possible en 60 secondes et classez-vous dans le top 50<br></br>
+                            Tapez le plus de mots possible en 60 secondes et classez-vous dans le top 50 (bientôt online)<br></br>
                             {/* Version bientôt accessible, toujours en développement */}
                         </div>
                         <p className="project-tools">React &nbsp; Symfony/PHP &nbsp; MariaDB</p>
@@ -85,6 +88,10 @@ export class Project extends Component {
                             target="_blank"
                             rel="noopener noreferrer">
                                 <FontAwesomeIcon icon={['fab', 'github']} className="project-icons-left" />
+                            </a>  
+                            <a href="https://github.com/Math657/speedype" 
+                            target="_blank"
+                            rel="noopener noreferrer">
                                 <FontAwesomeIcon icon={['fas', 'external-link-alt']} className="project-icons-left" /> 
                             </a>  
                         </div>
