@@ -217,6 +217,10 @@ header h2:hover, .logo {
     overflow: hidden;
 }
 
+#speedype-img {
+    border-radius: 4px;
+}
+
 .overlay {
     background-color: #4682b4;
     opacity: 0.2;
@@ -513,6 +517,95 @@ header h2:hover, .logo {
 
 
 /* MOBILE */
+
+@media only screen and (max-width: 830px) {
+    .one-project img, .one-project-left img {
+        width: 400px;
+    }
+
+    .project-info {
+        left: 30%;
+    }
+
+    .project-info-left {
+        right: 30%;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .one-project img, .one-project-left img {
+        width: 350px;
+    }
+}
+
+@media only screen and (max-width: 730px) {
+    .one-project, .one-project-left {
+        display: flex;
+        flex-direction: column-reverse;
+        position: static;
+        margin: 0;
+        transform: none;
+    }
+
+    .one-project-left {
+        margin-top: 3em;
+    }
+
+    .one-project:hover .project-description {
+        transform: none;
+    }
+
+    .one-project-left:hover .project-description-left {
+        transform: none;
+    }
+
+    .project-thumb {
+        overflow: visible;
+    }
+
+    .fishfollow-img img {
+        width: 400px;
+        height:auto;
+        border: 1px #dadadacb solid;
+        border-radius: 3px;
+    }
+
+    .overlay {
+        background-color: #ffffff;
+        transition: 0.2s;
+        height: 100%;
+        width: 100%;
+        position: static;
+    }
+
+    .project-info, .project-info-left {
+        position: static;
+        text-align: center;
+        align-items: center;
+    }
+
+    .project-title {
+        text-align: center;
+        margin-right: auto;
+    }
+
+    .project-title-left {
+        text-align: center;
+        margin-left: auto;
+    }
+
+    .project-description, .project-description-left {
+        padding: 1em;
+        font-size: 16px;
+        transform: none;
+        max-width: 450px;
+    }
+
+    .project-links {
+        margin-bottom: 1em;
+    }
+}
+
 @media only screen and (max-width: 700px) {
 
     .section {
@@ -534,7 +627,6 @@ header h2:hover, .logo {
         margin: 5px;
     }
 
-    
 
     /* Intro Mobile */
     .intro {
@@ -547,7 +639,6 @@ header h2:hover, .logo {
     .skill-item {
         border-right: 2px solid rgb(76, 128, 240);
     }
-
 
     .skill-item ul {
         display: flex;
@@ -582,79 +673,6 @@ header h2:hover, .logo {
         flex-wrap: wrap;
     }
 
-    /* Project Mobile */
-    .one-project, .one-project-left {
-        display: flex;
-        flex-direction: column-reverse;
-        position: static;
-        margin: 0;
-        transform: none;
-    }
-
-    .one-project-left {
-        margin-top: 3em;
-    }
-
-    .one-project:hover .project-description {
-        transform: none;
-    }
-
-    .one-project-left:hover .project-description-left {
-        transform: none;
-    }
-
-    .project-thumb {
-        overflow: visible;
-    }
-
-    .fishfollow-img img {
-        width: 350px;
-        height:auto;
-        border: 1px #dadadacb solid;
-        border-radius: 3px;
-    }
-
-    .overlay {
-        background-color: #ffffff;
-        transition: 0.2s;
-        height: 100%;
-        width: 100%;
-        position: static;
-    }
-
-    .project-info, .project-info-left {
-        position: static;
-        text-align: center;
-        align-items: center;
-    }
-
-    .project-title {
-        text-align: center;
-        margin-right: auto;
-    }
-
-    .project-title-left {
-        text-align: center;
-        margin-left: auto;
-    }
-
-    .project-description, .project-description-left {
-        padding: 1em;
-        font-size: 16px;
-        transform: none;
-    }
-
-    .project-links {
-        margin-bottom: 1em;
-    }
-
-    /* Other Projects */
-
-    .row-1, .row-2, .row-3, .row-4 {
-        display: flex;
-        flex-direction: column;
-    }
-
     /* About Mobile */
 
     .about {
@@ -680,6 +698,21 @@ header h2:hover, .logo {
         margin: 0;
     }
 
+}
+
+@media only screen and (max-width: 600px) { 
+
+    /* Other Projects */
+    .row-1, .row-2, .row-3, .row-4 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .one-other-project {
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 /* Mobile Small */

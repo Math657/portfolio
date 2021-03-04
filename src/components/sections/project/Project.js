@@ -64,7 +64,8 @@ export class Project extends Component {
                         <div className="fishfollow-img">
                             <img src={speedype}
                                 alt="screenshot du projet Fish & Follow"
-                                width="450">
+                                width="450"
+                                id="speedype-img">
                             </img>
                         </div>     
                     </div>
