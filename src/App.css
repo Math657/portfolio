@@ -191,8 +191,22 @@ header h2:hover, .logo {
     margin-top: 2em;
 }
 
+.one-project-left {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-right: 3em;
+    margin-top: 6em;
+}
+
 .one-project:hover .project-description {
     transform: translateX(-10px);
+}
+
+.one-project-left:hover .project-description-left {
+    transform: translateX(10px);
 }
 
 .project-thumb {
@@ -233,6 +247,21 @@ header h2:hover, .logo {
     margin-left: auto; */
 }
 
+.project-info-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    position: absolute;
+    /* width: 100%;
+    max-width: 40%; */
+    right: 40%;
+    /* margin-right: 1em;
+    margin-left: auto; */
+}
+
 .project-featured {
     color: rgb(76, 128, 240);
     font-size: 16px;
@@ -247,6 +276,16 @@ header h2:hover, .logo {
     font-weight: bold;
     text-align: right;
     margin-left: auto;
+}
+
+.project-title-left {
+    color: #000000;
+    margin-bottom: 1em;
+    text-decoration: none;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: left;
+    margin-right: auto;
 }
 
 .project-description {
@@ -265,10 +304,32 @@ header h2:hover, .logo {
     z-index: 2;
 }
 
+.project-description-left {
+    font-size: 16px;
+    background-color: #1B1B1B;
+    color: white;
+    border-radius: 10px;
+    padding: 1.3em 4em 1.3em 1.3em;
+    margin-bottom: 1em;
+    margin-left: auto;
+    line-height: 150%;
+    min-height: 60px;
+    box-shadow: 3px 3px 10px -3px #000;
+    transition: ease-in-out 0.2s;
+    transform: translateX(-10px);
+    z-index: 2;
+}
+
 .project-description:hover {
     cursor: default;
     transition: ease-in-out 0.2s;
     transform: translateX(-10px);
+}
+
+.project-description-left:hover {
+    cursor: default;
+    transition: ease-in-out 0.2s;
+    transform: translateX(10px);
 }
 
 .project-tools {
@@ -283,9 +344,88 @@ header h2:hover, .logo {
     margin-left: 10px;
 }
 
+.project-icons-left {
+    font-size: 26px;
+    transition: 0.3s;
+    color: #000000;
+    margin-right: 10px;
+}
+
 .project-icons:hover {
     filter: invert(46%) sepia(69%) saturate(2512%) hue-rotate(204deg) brightness(96%) contrast(95%);
     transition: 0.3s;
+}
+
+.project-icons-left:hover {
+    filter: invert(46%) sepia(69%) saturate(2512%) hue-rotate(204deg) brightness(96%) contrast(95%);
+    transition: 0.3s;
+}
+
+/* Autres Projets */
+
+.other-projects {
+    margin-top: 4em;
+    text-align: center;
+}
+
+.container-other-projects {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+}
+
+.row-1, .row-2, .row-3, .row-4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.one-other-project {
+    border-left: 3px #535353 solid;
+    border-bottom: 3px #535353 solid;
+    border-radius: 3px;
+    padding: 10px;
+    margin: 10px;
+    transition: 0.2s ease-in-out;
+}
+
+.one-other-project:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.one-other-projet a:visited {
+    text-decoration: none;
+    background-color: red;
+}
+
+.one-other-project-info {
+    font-size: 16px;
+    text-decoration: none;
+    color: #000000;
+    max-width: 250px;
+}
+
+.see-more {
+    margin-top: 2em;
+}
+
+.see-more-btn {
+    border: none;
+    background-color: #ecebebcb;
+    border-radius: 5px;
+    padding: 10px 25px 10px 25px;
+    width: 150px;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.150s;
+}
+
+.see-more-btn:hover {
+    cursor: pointer;
+    background-color: rgb(76, 128, 240);
+    color: #ffffff;
 }
 
 /* Contact */
@@ -300,22 +440,29 @@ header h2:hover, .logo {
     margin-bottom: 1em;
 }
 
-.contact button {
+.contact-btn {
     border: none;
     background-color: #ecebebcb;
     border-radius: 5px;
     padding: 10px 25px 10px 25px;
     margin: 0 5px 2em 5px;
+    transition: 0.150s;
 }
 
-.contact button:hover {
+.contact-btn:hover {
     cursor: pointer;
+    background-color: rgb(76, 128, 240);
 }
 
 .contact-icons {
     color: #000000;
     font-size: 2em;
 }
+
+.contact-btn:hover > .contact-icons {
+    color: white;
+}
+
 
 /* Footer */
 
@@ -436,7 +583,7 @@ header h2:hover, .logo {
     }
 
     /* Project Mobile */
-    .one-project {
+    .one-project, .one-project-left {
         display: flex;
         flex-direction: column-reverse;
         position: static;
@@ -444,7 +591,15 @@ header h2:hover, .logo {
         transform: none;
     }
 
+    .one-project-left {
+        margin-top: 3em;
+    }
+
     .one-project:hover .project-description {
+        transform: none;
+    }
+
+    .one-project-left:hover .project-description-left {
         transform: none;
     }
 
@@ -453,7 +608,7 @@ header h2:hover, .logo {
     }
 
     .fishfollow-img img {
-        width: 300px;
+        width: 350px;
         height:auto;
         border: 1px #dadadacb solid;
         border-radius: 3px;
@@ -467,7 +622,7 @@ header h2:hover, .logo {
         position: static;
     }
 
-    .project-info {
+    .project-info, .project-info-left {
         position: static;
         text-align: center;
         align-items: center;
@@ -478,18 +633,26 @@ header h2:hover, .logo {
         margin-right: auto;
     }
 
-    .project-description {
+    .project-title-left {
+        text-align: center;
+        margin-left: auto;
+    }
+
+    .project-description, .project-description-left {
         padding: 1em;
         font-size: 16px;
         transform: none;
     }
 
-    .project-description {
-        transform: none;
-    }
-
     .project-links {
         margin-bottom: 1em;
+    }
+
+    /* Other Projects */
+
+    .row-1, .row-2, .row-3, .row-4 {
+        display: flex;
+        flex-direction: column;
     }
 
     /* About Mobile */
@@ -527,6 +690,7 @@ header h2:hover, .logo {
 
     .nav {
         font-size: 12px;
+        font-weight: 500;
     }
 
     .about-me {

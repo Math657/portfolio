@@ -7,8 +7,8 @@ export class Intro extends Component {
                 <h1>Mathieu Dessaint</h1>
                 <h3>Développeur Web</h3>
                 <h4>Rouen</h4>
-                <h5>“La refactorisation c’est comme faire la vaisselle après la cuisine.” <br></br>
-                &nbsp; Toby Parkins</h5>    
+                {/* <h5>“La refactorisation c’est comme faire la vaisselle après la cuisine.” <br></br>
+                &nbsp; Toby Parkins</h5>     */}
             </div>
         )
     }
