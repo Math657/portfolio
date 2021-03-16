@@ -510,7 +510,7 @@ header h2:hover, .logo {
     margin-top: 1em;
     min-height: 180px;
     min-width: 150px;
-    background-image: url(./images/photo.jpg);
+    background-image: url(./../images/photo.jpg);
     background-size: contain;
     background-repeat: no-repeat;
 }
