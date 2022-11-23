@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import OtherProjects from './OtherProjects'
+// import OtherProjects from './OtherProjects'
+import Carousel from './Carousel'
 import fishfollow from '../../../images/fishfollow.jpg'
 import speedype from '../../../images/speedype.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -101,8 +102,8 @@ export class Project extends Component {
                     
                 </div>
 
-                <OtherProjects />
-
+                {/* <OtherProjects /> */}
+                <Carousel />
             </div>
         )
     }

@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Carousel from './Carousel'
 import groupomania from '../../../images/groupomania.jpg'
 import orinico from '../../../images/orinoco.jpg'
 import portfolio from '../../../images/portfolio.jpg'
@@ -19,8 +20,9 @@ export class OtherProjects extends Component {
         return (
             <div className="other-projects">
                 <h4>Autres projets</h4>
+                <Carousel />
                 <div className="container-other-projects">
-                    <div className="row-1">
+                    {/* <div className="row-1">
                         <div className="one-other-project">
                             <p>Portfolio</p>
                             <div className="one-other-project-thumb">
@@ -49,8 +51,6 @@ export class OtherProjects extends Component {
                                 <a href="https://github.com/Math657/P7" target="_blank"
                                     rel="noopener noreferrer" >
                                     <img src={groupomania} alt="portfolio thumbnail" width="250px" />
-                                    {/* <p className="one-other-project-info">Création d'un réseau interne sécurisé d'une entreprise, <br></br>
-                                    réalisé dans le cadre de ma formation</p> */}
                                 </a>
                             </div>
                         </div>
@@ -84,7 +84,7 @@ export class OtherProjects extends Component {
                                 </div>
                             </div> 
                         }
-                    </div>
+                    </div> */}
                 </div>
                 
             </div>

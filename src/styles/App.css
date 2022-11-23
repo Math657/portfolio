@@ -367,8 +367,37 @@ header h2:hover, .logo {
 
 /* Autres Projets */
 
+.sliderimg{
+    margin-top: 1.5em;
+    /* width: 250px; */
+    height: 250px;
+    object-fit: cover;
+    border: 1px solid #afabab;
+    border-radius: 3px;
+}
+
+.one-item {
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.one-item:hover {
+    cursor: pointer;
+}
+
+.info-item {
+    font-size: 18px;
+    max-width: 250px;
+    text-align: center;
+    margin-left: 20px;
+}
+
 .other-projects {
     margin-top: 4em;
+}
+
+.other-projects h4 {
     text-align: center;
 }
 
