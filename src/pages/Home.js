@@ -17,11 +17,6 @@ export class Home extends Component {
                     <Intro id="intro"/>
                 </ScrollAnimation>
 
-                <ScrollAnimation animateIn="animate__animated animate__fadeIn" 
-                                duration={0.7}
-                                offset={10}>
-                    <Skill id="skill"/>
-                </ScrollAnimation>
 
                 <ScrollAnimation animateIn="animate__animated animate__fadeIn" 
                                 duration={0.7}
@@ -29,13 +24,12 @@ export class Home extends Component {
                     <Project id="project"/>
                 </ScrollAnimation>
 
-
                 <ScrollAnimation animateIn="animate__animated animate__fadeIn" 
                                 duration={0.7}
                                 offset={10}>
-                    <About id="about"/>
+                    <Skill id="skill"/>
                 </ScrollAnimation>
-                
+
                 <ScrollAnimation animateIn="animate__animated animate__fadeIn" 
                                 duration={0.7}
                                 offset={10}>

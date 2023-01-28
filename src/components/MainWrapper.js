@@ -1,49 +1,33 @@
 import React, { Component } from 'react'
-import Header from './Header'
-import Home from '../pages/Home'
-// import About from '../pages/About'
-import Footer from './Footer'
-import Stars from './Stars'
+import RoutedComponents from './RoutedComponents'
+import { BrowserRouter as Router} from 'react-router-dom'
+import DarkModeContext from './DarkModeContext';;
 
 export class MainWrapper extends Component {
     constructor() {
         super()
         this.state = {
           showHeader: true,
-          scrollPos: 0
+          scrollPos: 0,
+          isDarkMode: false
         }
     }
 
-    componentDidMount() {
-        window.addEventListener("scroll", this.handleScroll)   
-    }
+    toggleDarkMode = () => {
+        this.setState(prevState => ({
+          isDarkMode: !prevState.isDarkMode
+        }));
+      }
 
-    componentWillUnmount() {
-        window.removeEventListener("scroll", this.handleScroll)
-    }
-
-    handleScroll = () => {
-        this.setState({
-            scrollPos: document.body.getBoundingClientRect().top,
-            showHeader: document.body.getBoundingClientRect().top > this.state.scrollPos
-            || this.state.scrollPos >= 200
-        })
-    }
-
-    showHeader = () => {
-        this.setState({
-            showHeader: true
-        })
-    }
+   static contextType = DarkModeContext;
 
     render() {
+        const { isDarkMode } = this.context;
         return (
-            <div>
-                    <Stars />
-                    <Header scrollPos={this.state.scrollPos} showHeader={this.state.showHeader} />
-                    <Home />
-                    {/* <About showHeader = {this.showHeader} /> */}
-                    <Footer />
+            <div className={isDarkMode ? 'dark-mode' : 'light-mode'}>
+                <Router>
+                    <RoutedComponents></RoutedComponents>
+                </Router>
             </div>
         )
     }

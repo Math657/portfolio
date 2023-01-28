@@ -4,7 +4,7 @@ export class Footer extends Component {
     render() {
         return (
             <div className="footer">
-                Mathieu Dessaint | 2021
+                © Mathieu Dessaint | 2023.
             </div>
         )
     }
