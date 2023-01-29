@@ -4,11 +4,10 @@ import "animate.css/animate.min.css"
 import React, { Component } from 'react';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
-import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
-import { faExternalLinkAlt, faMoon, faSun } from '@fortawesome/free-solid-svg-icons'
+import { faExternalLinkAlt, faMoon, faSun, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import DarkModeContext from './components/DarkModeContext';
 
-library.add(fab, faEnvelope, faExternalLinkAlt, faMoon, faSun)
+library.add(fab, faEnvelope, faExternalLinkAlt, faMoon, faSun, faPhone)
 
 
 

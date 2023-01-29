@@ -45,7 +45,7 @@ export class Project extends Component {
                         </div>
                         <p className="project-tools">React &nbsp; Laravel &nbsp; MySQL | <span className="project-featured"><strong>2022</strong></span></p>
                         <div className="project-links">
-                            <a href="https://www.mecabecane.com//" 
+                            <a href="https://www.mecabecane.com" 
                             target="_blank"
                             rel="noopener noreferrer">
                                 <FontAwesomeIcon icon={['fas', 'external-link-alt']} className="project-icons" fill={isDarkMode ? "#fff" : "#000"} /> 
@@ -83,6 +83,13 @@ export class Project extends Component {
                         </div>
                         <p className="project-tools tools-left">Angular/Ionic &nbsp; Symfony/API Platform &nbsp; PostgreSQL &nbsp; Docker | <span className="project-featured"><strong>2022 - 2023</strong></span></p>
                         <div className="project-links">
+                        <div className="project-links">
+                            <a href="https://www.u-manage.fr" 
+                            target="_blank"
+                            rel="noopener noreferrer">
+                                <FontAwesomeIcon icon={['fas', 'external-link-alt']} className="project-icons-left" fill={isDarkMode ? "#fff" : "#000"} /> 
+                            </a>  
+                        </div>
                             {/* <a href="https://github.com/Math657/speedype" 
                             target="_blank"
                             rel="noopener noreferrer">

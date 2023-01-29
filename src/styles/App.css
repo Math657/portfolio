@@ -6,6 +6,7 @@
     --background-color-project-description: #1B1B1B;
     --text-color-project-description: #fff;
     --icon-project-color: #000;
+    --border-color-other-project: #535353;
 }
 
 .dark-mode {
@@ -16,6 +17,7 @@
     --icon-project-color: #fff;
     --background-color-project-description: rgb(76, 128, 240);
     --text-color-project-description: rgb(255, 255, 255);
+    --border-color-other-project: #cccccc;
     /* --background-color-project-description: #fff;
     --text-color-project-description: #000; */
 }
@@ -255,7 +257,7 @@ header h2:hover, .logo {
 }
 
 .overlay {
-    background-color: #4682b4;
+    /* background-color: #4682b4; */
     opacity: 0.2;
     transition: 0.2s;
     height: 100%;
@@ -265,8 +267,9 @@ header h2:hover, .logo {
 }
 
 .overlay:hover {
-    opacity: 0;
+    opacity: 0.2;
     transition: 0.2s;
+    background-color: #4682b4;
 }
 
 .project-info {
@@ -451,8 +454,8 @@ header h2:hover, .logo {
 }
 
 .one-other-project {
-    border-left: 3px #535353 solid;
-    border-bottom: 3px #535353 solid;
+    border-left: 3px var(--border-color-other-project) solid;
+    border-bottom: 3px var(--border-color-other-project) solid;
     border-radius: 3px;
     padding: 10px;
     margin: 10px;
@@ -1009,4 +1012,25 @@ header h2:hover, .logo {
     .about-me {
         margin-left: 1.5em;
     }
+}
+
+
+/* CARTE */
+
+.separator {
+    height: 2px;
+    width:500px;
+    background-color: rgb(90, 108, 134);
+    /* background-color: rgb(95, 92, 93); */
+    /* background-color: rgb(76, 128, 240); */
+    margin: 2rem 0 2rem 0
+}
+
+.carte-info {
+    font-size: 0.7em;
+    margin-bottom: 5px;
+}
+
+.carte-icon {
+    margin-right: 1rem;
 }

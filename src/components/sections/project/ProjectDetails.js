@@ -19,8 +19,8 @@ export class ProjectDetails extends Component {
                 role: 'Développeur Fullstack',
                 stacks: ['React', 'Symfony', 'MySQL'],
                 date: '2021 - 2022',
-                description: 'Mécabécane permet de configurer et concevoir son propre vélo et de le commander. Fabriqués par des passionnés, tout est fait à la main afin de garantir une certaine qualité.',
-                missions: 'Sur ce projet, je suis intervenu sur toute la partie backend, base de donnée, et processus de paiement.',
+                description: 'Mécabécane offre la possibilité de personnaliser et créer son propre vélo, puis de le commander. Fabriqué avec passion, tout est produit à la main pour garantir une qualité supérieure.',
+                missions: 'Sur ce projet, j\'ai réalisé le backend, le processus de paiement, construit la base de données, et effectuer le déploiement.',
                 link: 'https://www.mecabecane.com/',
                 images: [mecabecane, mecabecane2]
             },
@@ -29,10 +29,10 @@ export class ProjectDetails extends Component {
                 role: 'Développeur Fullstack',
                 stacks: ['Angular', 'Ionic', 'Symfony', 'API Platform', 'PostgreSQL', 'Docker', 'Azure'],
                 date: '2022 - 2023',
-                description: 'U-Manage est une solution logicielle innovante qui s’intègre dans les systèmes d\'information et de digitalisation et accompagne le management des entreprises.',
+                description: 'U-Manage est un logiciel innovant qui intègre les systèmes d\'information et digitalisation pour soutenir la gestion d\'entreprise. Il est désormais commercialié et est transposable dans tous les métiers, qu\'ils soient industriels ou tertiaires',
                 missions: '',
                 link: 'https://www.u-manage.fr/',
-                images: [umanage3, umanage2, umanage1]
+                images: [umanage2, umanage3, umanage1]
             },
             wotso: {
                 title: 'Wotso',
@@ -49,8 +49,8 @@ export class ProjectDetails extends Component {
                 role: 'Développeur Fullstack',
                 stacks: ['Laravel', 'MySQL'],
                 date: '2021',
-                description: 'France Mineraux est le leader français sur la Lithothérapie (bijoux en pierres naturelles, objets en pierre naturelles, mineraux, ...). Il s\'agit d\'un site e-commerce. Je suis intervenu sur la partie backoffice du site.',
-                missions: 'Je suis intervenu sur la partie backoffice du site.',
+                description: 'France Mineraux est le leader français sur la Lithothérapie (bijoux et objets en pierres naturelles, mineraux, ...). Il s\'agit d\'un site e-commerce.',
+                missions: 'Je suis intervenu sur la partie backoffice du site, en instaurant un système de support, inventaire et dashboard.',
                 link: 'https://www.france-mineraux.fr/',
                 images: [francemineraux, francemineraux2]
             },
@@ -60,7 +60,7 @@ export class ProjectDetails extends Component {
                 stacks: ['Unity', 'C#'],
                 date: '2021',
                 description: 'Space Banditos est un jeu PC animé et en équipe se jouant en ligne jusqu\'à 9 joueurs. Des équipes de 3 sont formées et combattent pour remporter la partie.',
-                missions: 'J\'ai pu effectuer des développements sur l\'interface et les menus du jeu.',
+                missions: 'J\'ai pu effectuer des développements sur l\'interface et les menus du jeu, ainsi qu\'un moyen de paiement.',
                 link: 'https://store.steampowered.com/app/1643040/SPACE_BANDITOS/?l=french',
                 images: [spacebanditos, spacebanditos2]
             },
