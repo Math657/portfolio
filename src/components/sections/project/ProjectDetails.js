@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { Link } from 'react-router-dom'
 import wotso from '../../../images/wotso.png'
 import wotso2 from '../../../images/wotso2.png'
 import wotso3 from '../../../images/wotso3.png'
@@ -17,7 +19,7 @@ export class ProjectDetails extends Component {
             mecabecane: {
                 title: 'Mécabécane',
                 role: 'Développeur Fullstack',
-                stacks: ['React', 'Symfony', 'MySQL'],
+                stacks: ['React', 'Laravel', 'MySQL'],
                 date: '2021 - 2022',
                 description: 'Mécabécane offre la possibilité de personnaliser et créer son propre vélo, puis de le commander. Fabriqué avec passion, tout est produit à la main pour garantir une qualité supérieure.',
                 missions: 'Sur ce projet, j\'ai réalisé le backend, le processus de paiement, construit la base de données, et effectuer le déploiement.',
@@ -80,6 +82,10 @@ export class ProjectDetails extends Component {
         if (project) {
             return (
                 <div className="projet-details section">
+                    <Link to="/" className='back-btn'>
+                        <FontAwesomeIcon icon='arrow-left' className='arrow-icon'/>
+                    </Link>
+
                     <div className='details-info'>
                         <div className='details-role'>
                             <h2 className='details-role-project'>{ project.title }</h2>

@@ -507,8 +507,22 @@ header h2:hover, .logo {
 
 /* Projet Details */
 
+.back-btn {
+    color: var(--text-color);
+    transition: 0.150s;
+}
+
+.back-btn:hover {
+    color: var(--blue-color);
+}
+
+.arrow-icon {
+    font-size: 2em;
+    margin-bottom: 2em;
+}
+
 .projet-details {
-    margin-top: 30vh;
+    margin-top: 24vh;
     font-size: large;
 }
 
@@ -635,6 +649,18 @@ header h2:hover, .logo {
     color: rgb(76, 128, 240);
 }
 
+.clip {
+    clip-path: circle(44% at 50% 50%);
+    height: 170px;
+    margin-top: 1em;
+}
+
+.info-pic {
+    max-width: 25em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5em;
+}
 
 .wrapper-picture {
     /* border-radius: 50%; */
@@ -734,7 +760,7 @@ header h2:hover, .logo {
     }
 
     .nav {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .one-other-project img {
@@ -944,11 +970,11 @@ header h2:hover, .logo {
 /* Mobile Small */
 @media only screen and (max-width: 410px) {
     header h2 {
-        font-size: 18px;
+        /* font-size: 18px; */
     }
 
     .nav {
-        font-size: 12px;
+        /* font-size: 12px; */
         font-weight: 500;
     }
 

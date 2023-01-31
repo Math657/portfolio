@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import profilPicture from '../../images/profil.webp'
 
 export class Contact extends Component {
 
@@ -8,12 +9,6 @@ export class Contact extends Component {
         return (
             <div className="contact section">
                 <h2>Me contacter</h2>
-                {/* <h5>Email</h5>
-                <a href="mailto:mathieu.dessaint10@gmail.com">
-                    <button className="contact-btn">
-                        <FontAwesomeIcon icon={['far', 'envelope']} className="contact-icons" />
-                    </button>
-                </a> */}
                 <p className="email">contact@mathieu-dessaint.com</p>
                 
                 {/* <h5>Autres plateformes</h5> */}
@@ -33,7 +28,10 @@ export class Contact extends Component {
                     </button>
                 </a>
                 
-                
+                <div className='pic'>
+                    <img className="clip" src={profilPicture} alt="Mathieu Dessaint" />
+                    <p className='info-pic'>Créateur de sites web et applications fonctionnelles, je m'adapte à la plupart des projets.</p>
+                </div>
             </div>
         )
     }
